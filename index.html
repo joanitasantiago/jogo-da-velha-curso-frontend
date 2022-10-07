@@ -7,32 +7,71 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="icon" href="./images/streamlinehq-mail-sign-hashtag-mail-48.png" type="image/png">
-    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="stylesheet" type="text/css" href="./styles/board.css">
+    <link rel="stylesheet" type="text/css" href="./styles/scoreboard.css">
+    <link rel="stylesheet" type="text/css" href="./styles/buttons.css">
 </head>
 
 <body>
-    <header>
-        <h1>
-            Jogo da Velha
-        </h1>
-    </header>
-    <div class="board">
-        <div>
-            <div id="0" class="square"></div>
-            <div id="1" class="square"></div>
-            <div id="2" class="square"></div>
+    <div class="main-container">
+            <h1>
+                JOGO DA VELHA
+            </h1>
+        <div class="scoreboard">
+            <div class="deco-line"></div>
+            <div id="playerX" class="score-box">
+                <p class="player-name">
+                    Jogador X
+                </p>
+                <div class="score">
+                    0
+                </div>
+            </div>
+            <div id="tie" class="score-box">
+                <p class="player-name">
+                    Empates
+                </p>
+                <div class="score">
+                    0
+                </div>
+            </div>
+            <div id="playerO" class="score-box">
+                <p class="player-name">
+                    Jogador 0
+                </p>
+                <div class="score">
+                    0
+                </div>
+            </div>
         </div>
-        <div>
-            <div id="3" class="square"></div>
-            <div id="4" class="square"></div>
-            <div id="5" class="square"></div>
+        <div class="board">
+            <div>
+                <div id="0" class="square"></div>
+                <div id="1" class="square"></div>
+                <div id="2" class="square"></div>
+            </div>
+            <div>
+                <div id="3" class="square"></div>
+                <div id="4" class="square"></div>
+                <div id="5" class="square"></div>
+            </div>
+            <div>
+                <div id="6" class="square"></div>
+                <div id="7" class="square"></div>
+                <div id="8" class="square"></div>
+            </div>
         </div>
-        <div>
-            <div id="6" class="square"></div>
-            <div id="7" class="square"></div>
-            <div id="8" class="square"></div>
+        <div class="buttons-container">
+            <button id="play-again" class="bttn" onclick="playagain()">
+                JOGAR<br>NOVAMENTE
+            </button>
+            <button id="restart-score" class="bttn" onclick="resetscore()">
+                RESETAR<br>PLACAR
+            </button>
         </div>
     </div>
+
     <script src="./scripts/game.js"></script>
     <script src="./scripts/interface.js"></script>
 </body>

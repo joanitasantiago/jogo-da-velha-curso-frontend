@@ -31,9 +31,8 @@ function updateSquare(position){
 }
 
 // window.onbeforeunload = confirmExit;
+
 // function confirmExit()
 // {
-//     if(document.getElementById("comentario").value != ""){
-//         return "Deseja realmente sair desta página?";
-//     }
+//     return "Se você fechar o navegador, os dados serão perdidos. Deseja Realmente sair?";
 // }

@@ -1,17 +1,10 @@
-body{
-    text-align: center;
-}
-
-h1{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
 
 .square{
     width: 100px;
     height: 100px;
-    background-color: lightgrey;
-    border: 1px solid grey;
+    background-color: #f0ebd8;
+    border: 1px solid #748cab;
+    position: relative;
     display: inline-block;
 }
 
@@ -33,6 +26,7 @@ h1{
 .x::after{
     position: absolute;
     content: "\274C";
+    filter: hue-rotate(250deg);
     font-size: 50px;
     line-height: 100px;
     top: 0;

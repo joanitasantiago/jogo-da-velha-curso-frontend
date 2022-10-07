@@ -1,0 +1,26 @@
+.buttons-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.bttn{
+    line-height: 1.2;
+    font-size: 12px;
+    margin: 15px;
+    width: 95px;
+    height: 35px;
+    border-radius: 6%;
+    background-color: #1d2d44;
+    border: 1px solid #1d2d44;
+    transition-duration: 0.4s;
+    color: white;
+    
+}
+
+.bttn:hover{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: #00000030;
+}

@@ -26,16 +26,14 @@ function handleMove(position) {
         gameOver = isWin();
 
         if (gameOver == false) {
-
-            playerTime = (playerTime == 0) ? 1 : 0;
+        playerTime = playerTime == 0 ? 1 : 0;
         }
     }
 
     return gameOver;
-    }
+}
 
 function isWin() {
-
     for (let i = 0; i < winSates.length; i++) {
         let seq = winSates[i];
 

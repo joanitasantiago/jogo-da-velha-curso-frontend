@@ -1,0 +1,36 @@
+.scoreboard {
+    margin: auto;
+    margin-bottom: 35px;
+    width: 400px;
+    height: 65px;
+}
+
+.deco-line {
+    width: 400px;
+    height: 2px;
+    background-color:#1d2d44;
+    top: 50%;
+    position: relative;
+}
+
+.score-box {
+    font-size: 18px;
+    color: white;
+    width: 100px;
+    height: 65px;
+    display: inline-block;
+    border-radius: 5%;
+    background-color: #1d2d44;
+    position: relative;
+    margin: 0px 5px;
+}
+
+.player-name {
+    margin: 0;
+    margin-top: 10px;
+    padding: 2px;
+}
+
+.score {
+    font-size: 22px;
+}
