@@ -2,8 +2,8 @@
 
 let board = ["", "", "", "", "", "", "", "", ""];
 let playerTime = 0;
-let symbols = ["o", "x"];
 let gameOver = false;
+let symbols = ["o", "x"];
 let winSates = [
     [0, 1, 2],
     [3, 4, 5],
@@ -53,4 +53,11 @@ function isWin() {
     }
 
     return false;
+}
+
+function playagain() {
+    board = ["", "", "", "", "", "", "", "", ""];
+    playerTime = 0;
+    gameOver = false;
+    resetSquares();
 }

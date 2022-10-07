@@ -30,6 +30,17 @@ function updateSquare(position){
         }
 }
 
+
+function resetSquares(){
+    let squares = document.querySelectorAll(".square");
+
+    squares.forEach ((square) => {
+
+        let position = square.id;
+        board[position] = square.innerHTML = ``
+    })
+}
+
 // window.onbeforeunload = confirmExit;
 
 // function confirmExit()
