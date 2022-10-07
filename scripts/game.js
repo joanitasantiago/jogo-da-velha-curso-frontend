@@ -3,6 +3,8 @@
 let board = ["", "", "", "", "", "", "", "", ""];
 let playerTime = 0;
 let gameOver = false;
+let player1Wins = 0;
+let player2Wins = 0;
 let symbols = ["o", "x"];
 let winSates = [
     [0, 1, 2],
@@ -47,17 +49,19 @@ function isWin() {
         board[pos1] == board[pos2] &&
         board[pos1] == board[pos3] &&
         board[pos1] != ""
-        ) {
+        ) 
+        {
+            if(playerTime == 0)
+            {
+                player1Wins = player1Wins + 1;
+
+            } else {
+                player2Wins = player2Wins + 1;
+            }
+            setTimeout(updateScore, 10);
         return true;
         }
     }
 
     return false;
-}
-
-function playagain() {
-    board = ["", "", "", "", "", "", "", "", ""];
-    playerTime = 0;
-    gameOver = false;
-    resetSquares();
 }
